@@ -1,0 +1,90 @@
+﻿@page "/UserTable"
+@inject HttpClient Http
+
+<PageTitle>User Table</PageTitle>
+
+
+
+<div class="container-x ml-4 mr-4 mt-4">
+
+    <table class="table table-striped">
+
+        <thead>
+
+            <tr>
+
+                <th scope="col">#</th>
+
+                <th scope="col">Username</th>
+
+                <th scope="col">Role</th>
+
+                <th scope="col">Status</th>
+
+                <th class="text-end">
+                             <NavLink class="nav-link"  href="CreateUser">
+                    <button type="button" class="btn btn-primary">Add User <i class="bi bi-plus-lg">
+                    </i>
+                    </button>
+                    </NavLink>
+                    </th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <th scope="row">1</th>
+
+                <td>Mark</td>
+
+                <td>Admin</td>
+
+                <td>Active</td>
+
+                <td class="text-end"><button type="button" class="btn"><i class="bi bi-gear-fill"></i></button></td>
+
+            </tr>
+
+            <tr>
+
+                <th scope="row">2</th>
+
+                <td>Jacob</td>
+
+                <td>Data Entry</td>
+
+                <td>Active</td>
+
+                <td class="text-end"><button type="button" class="btn"><i class="bi bi-gear-fill"></i></button></td>
+
+            </tr>
+
+            <tr>
+
+                <th scope="row">3</th>
+
+                <td>Larry the Bird</td>
+
+                <td>Admin</td>
+
+                <td>Suspended</td>
+
+                <td class="text-end"><button type="button" class="btn"><i class="bi bi-gear-fill"></i></button></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+
+
+@code {
+
+}
