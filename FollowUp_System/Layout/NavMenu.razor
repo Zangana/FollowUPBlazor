@@ -1,0 +1,11 @@
+﻿<MudPaper Width="250px" Elevation="0" Class="py-3">
+    <MudNavMenu Color="Color.Info">
+        <MudNavLink Href="/dashboard" Icon="@Icons.Material.Filled.Dashboard">Dashboard</MudNavLink>
+        <MudNavLink Href="/FollowUp" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.SupportAgent">Follow Up</MudNavLink>
+        <MudNavGroup Title="User Managment" Icon="@Icons.Material.Filled.PeopleAlt" Expanded="true">
+            <MudNavLink Href="/CreateUser">Create User</MudNavLink>
+            <MudNavLink Href="/UserTable">User Table</MudNavLink>
+        </MudNavGroup>
+        <MudNavLink Href="/about">About</MudNavLink>
+    </MudNavMenu>
+</MudPaper>

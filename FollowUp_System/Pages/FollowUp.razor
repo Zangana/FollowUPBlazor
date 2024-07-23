@@ -1,0 +1,462 @@
+﻿@page "/FollowUp"
+@inject IDialogService DialogService
+<PageTitle>Home</PageTitle>
+
+@* <h1>Hello, world!</h1>
+ *@
+
+
+ <div class="container-x ml-4 mr-4 mt-4">
+     <div class="p-4 border rounded bg-white shadow-sm"
+<div class="row g-3">
+    <div class="col-md-4">
+        <label for="" class="form-label">WorkPlace</label>
+        <select class="form-select" id="" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Visa</option>
+        </select>
+    </div>
+
+    <div class="col-md-4">
+        <label for="" class="form-label">PhoneNumber</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="" required>
+        </div>
+    </div>
+    <div class="col-md-3 mt-auto">
+        <button type="button" class="btn btn-primary text-white">
+            Search
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+  
+        <div class="border-bottom " style="color: #d3dff8; border-bottom: 2px solid !important;"></div>
+  
+
+            <div class="col-md-12">
+
+                <div class="container d-flex mr-4" style="justify-content:flex-end;">
+
+            <button type="button" class="btn btn-primary ml-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Issues
+                <i class="fas fa-plus"></i>
+            </button>
+
+            <button type="button" class="btn btn-light ml-2" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="background-color: #dedede;">
+                WorkPlace
+                <i class="fas fa-plus"></i>
+            </button>
+                </div>
+
+                <table class="table table-condensed table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>WorkPlace Name</th>
+                            <th>Date</th>
+                            <th>Code</th>
+                            <th>Entry By</th>
+                            <th>Status</th>
+                            <th>Note</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                            <td>
+                                <MudIconButton Icon="@Icons.Material.Filled.ArrowDropDown" Color="Color.Inherit" Edge="Edge.Start" />
+                            </td>
+                            <td>Carlos</td>
+                            <td>Mathias</td>
+                            <td>Leme</td>
+                            <td>SP</td>
+                        <td>SP</td>
+                    <td><button type="button" class="btn"><i class="bi bi-card-text" data-bs-toggle="modal" data-bs-target="#exampleModal3"></i></button></td>
+                        </tr>
+                    <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+                    <td>
+                        <MudIconButton Icon="@Icons.Material.Filled.ArrowDropDown" Color="Color.Inherit" Edge="Edge.Start" />
+                    </td>
+                    <td>Carlos</td>
+                    <td>Mathias</td>
+                    <td>Leme</td>
+                    <td>SP</td>
+                    <td>SP</td>
+                    <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-card-text"></i></button></td>
+                </tr>
+
+
+                        <tr>
+                            <td colspan="12" class="hiddenRow">
+                                <div class="accordian-body collapse" id="demo2">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr class="info">
+                                                <th>Job</th>
+                                                <th>Company</th>
+                                                <th>Date On</th>
+                                                <th>Date off</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+
+                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                <td> <a href="#">Enginner Software</a></td>
+                                                <td>Google</td>
+                                                <td> 2016/09/27</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-warning btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Progress
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
+                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
+                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                                <td>
+                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
+                                                </td>
+                                            </tr>
+
+                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                            <td> <a href="#">Enginner Software</a></td>
+                                            <td>Google</td>
+                                            <td> 2016/09/27</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-warning btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Progress
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
+                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
+                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                            <td> <a href="#">Enginner Software</a></td>
+                                            <td>Google</td>
+                                            <td> 2016/09/27</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Completes
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
+                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
+                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
+                                            </td>
+                                        </tr>
+                                     
+
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
+                    <td>
+                        <MudIconButton Icon="@Icons.Material.Filled.ArrowDropDown" Color="Color.Inherit" Edge="Edge.Start" />
+                    </td>
+                    <td>Carlos</td>
+                    <td>Mathias</td>
+                    <td>Leme</td>
+                    <td>SP</td>
+                     <td>SP</td>
+                    <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-card-text"></i></button></td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="12" class="hiddenRow">
+                        <div class="accordian-body collapse" id="demo3">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr class="info">
+                                        <th>Job</th>
+                                        <th>Company</th>
+                                        <th>Date On</th>
+                                        <th>Date off</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+
+                                    <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                        <td> <a href="#">Enginner Software</a></td>
+                                        <td>Google</td>
+                                        <td> 2016/09/27</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Completes
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
+                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
+                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
+                                                        
+                                                     
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        <td>
+                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
+                                        </td>
+
+                                    </tr>
+
+                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                            <td> <a href="#">Enginner Software</a></td>
+                                            <td>Google</td>
+                                            <td> 2016/09/27</td>
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        Cancel
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
+                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
+                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
+                                            </td>
+
+                                        </tr>
+
+
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </td>
+                </tr>
+
+
+
+                    </tbody>
+                </table>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+  
+
+    </div>
+
+
+</div>
+</div>
+</div>
+ 
+<div class="modal fade mt-10" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Issues</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Issues</label>
+                        <select class="form-select" id="" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option>Visa</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Note</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade mt-10" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">WorkPlace</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">WorkPlace Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">PhoneNumber</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Note</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Add Note</label>
+                        <div class="input-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <table class="table table-striped">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th scope="col">#</th>
+
+                                    <th scope="col">Note</th>
+
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <th scope="row">1</th>
+
+                                    <td><p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p></td>
+
+
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Note</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Comment</h5>
+                        <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+@code {
+    public string TextValue { get; set; }
+    public class Pizza
+    {
+        public Pizza(string name)
+        {
+            Name = name;
+        }
+
+        public readonly string Name;
+
+        // Note: this is important so the MudSelect can compare pizzas
+        public override bool Equals(object o)
+        {
+            var other = o as Pizza;
+            return other?.Name == Name;
+        }
+
+        // Note: this is important too!
+        public override int GetHashCode() => Name?.GetHashCode() ?? 0;
+
+        // Implement this for the Pizza to display correctly in MudSelect
+        public override string ToString() => Name;
+    }
+
+}
