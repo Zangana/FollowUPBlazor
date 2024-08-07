@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using FollowUp_System.Model.CfgIssueTypeModel;
 using FollowUp_System.Model.WorkPlaceModel;
+using FollowUp_System.Model.FollowUpModel;
 
 namespace FollowUp_System.Model.IssueModel
 {
@@ -18,6 +19,9 @@ namespace FollowUp_System.Model.IssueModel
         [ForeignKey("CfgIssueTypeId")]
         [InverseProperty("TblIssues")]
         public virtual CfgIssueTypeRead? CfgIssueType { get; set; }
+
+        [InverseProperty("TblIssue")]
+        public virtual ICollection<FollowUpRead> TblFollowUps { get; set; } = new List<FollowUpRead>();
 
         [ForeignKey("TblWorkPlaceId")]
         [InverseProperty("TblIssues")]

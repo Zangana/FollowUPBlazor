@@ -89,7 +89,18 @@
                                 }
                                 <td></td>
                                 <td><button type="button" class="btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-plus h3"></i></button></td>
+
+                                @if(item.TblFollowUps != null)
+                                {
+
+                                    //Lera chon table kai ka danem. 
+                                    //aw raw y ka follow up kani tyaya. 
+                                    //Sub table ka chon lera danem.
+                                    // Har nmwnayakm bo bkan lera. 
+                                    <td>@item.TblFollowUps.Count)</td>
+                                }
                          </tr>
+
 
 
 
