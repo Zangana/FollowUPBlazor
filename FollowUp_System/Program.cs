@@ -13,8 +13,8 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-string url = @"https://localhost:7264/api/";
-//string url = @"http://192.168.1.146:8080/api/"; // calling API in the company.
+//string url = @"https://localhost:7264/api/";
+string url = @"http://192.168.1.146:8080/api/"; // calling API in the company.
 
 builder.Services.AddHttpClient<IIssueRepo, SqlIssueRepo>(client => client.BaseAddress = new Uri(url));
 builder.Services.AddHttpClient<IIssueTypeRepo, SqlIssueTypeRepo>(client => client.BaseAddress = new Uri(url));
