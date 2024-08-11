@@ -69,9 +69,10 @@
                     </thead>
 
                     <tbody>
-                        @foreach (var item in pagedResult.Results)
+                        <!--bexara naw am listawa. -->
+                        @foreach (var item in pagedResult.Results) // loop krdni data kan bo henanaway hamw aw data yanaya la API aygarenetawa la regay aw listy PagedResult.Results. 
                         {
-                        <tr data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                        <tr data-toggle="collapse" data-target="#demo10" class="accordion-toggle">
                          <td>@item.IssueNote</td>
                                 @if(item.CfgIssueType != null)
                                 {
@@ -90,22 +91,104 @@
                                 <td></td>
                                 <td><button type="button" class="btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-plus h3"></i></button></td>
 
-                                @if(item.TblFollowUps != null)
-                                {
-
-                                    //Lera chon table kai ka danem. 
-                                    //aw raw y ka follow up kani tyaya. 
-                                    //Sub table ka chon lera danem.
-                                    // Har nmwnayakm bo bkan lera. 
-                                    <td>@item.TblFollowUps.Count)</td>
-                                }
                          </tr>
 
+                     
+                                    <tr>
+                                <td colspan="12" class="hiddenRow">
+                                    <div class="accordian-body collapse" id="demo10">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr class="info">
+                                                    <th>Job</th>
+                                                    <th>Company</th>
+                                                    <th>Date On</th>
+                                                    <th>Date off</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <!-- amam bo bxara naw-->
+                                                <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                    <td> <a href="#">Enginner Software</a></td>
+                                                    <td>Google</td>
+                                                    <td> 2016/09/27</td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-warning btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Progress
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Completes</a></li>
+                                                            <li><a class="dropdown-item" href="#">Progress</a></li>
+                                                            <li><a class="dropdown-item" href="#">Cancel</a></li>
 
 
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                    <td>
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                <td> <a href="#">Enginner Software</a></td>
+                                                <td>Google</td>
+                                                <td> 2016/09/27</td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-warning btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Progress
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Completes</a></li>
+                                                            <li><a class="dropdown-item" href="#">Progress</a></li>
+                                                            <li><a class="dropdown-item" href="#">Cancel</a></li>
+
+
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+                                                <td> <a href="#">Enginner Software</a></td>
+                                                <td>Google</td>
+                                                <td> 2016/09/27</td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Completes
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Completes</a></li>
+                                                            <li><a class="dropdown-item" href="#">Progress</a></li>
+                                                            <li><a class="dropdown-item" href="#">Cancel</a></li>
+
+
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
+                                                </td>
+                                            </tr>
+
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </td>
+                            </tr>
 
                         }
-                    <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
+@*                     <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
                     <td>
                         <MudIconButton Icon="@Icons.Material.Filled.ArrowDropDown" Color="Color.Inherit" Edge="Edge.Start" />
                     </td>
@@ -117,9 +200,9 @@
                     <td><button type="button" class="btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-plus h3"></i></button></td>
 
                 </tr>
+ *@
 
-
-                        <tr>
+     @*                    <tr>
                             <td colspan="12" class="hiddenRow">
                                 <div class="accordian-body collapse" id="demo2">
                                     <table class="table table-striped">
@@ -134,7 +217,7 @@
                                         </thead>
 
                                         <tbody>
-
+                                            <!-- amam bo bxara naw-->
                                             <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
                                                 <td> <a href="#">Enginner Software</a></td>
                                                 <td>Google</td>
@@ -210,10 +293,10 @@
 
                                 </div>
                             </td>
-                        </tr>
+                        </tr> *@
 
 
-                <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
+@*                 <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
                     <td>
                         <MudIconButton Icon="@Icons.Material.Filled.ArrowDropDown" Color="Color.Inherit" Edge="Edge.Start" />
                     </td>
@@ -223,11 +306,11 @@
                     <td>SP</td>
                      <td>SP</td>
                      <td><button type="button" class="btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-plus h3"></i></button></td>
-                </tr>
+                </tr> *@
 
 
-                <tr>
-                    <td colspan="12" class="hiddenRow">
+             @*    <tr> *@
+           @*          <td colspan="12" class="hiddenRow">
                         <div class="accordian-body collapse" id="demo3">
                             <table class="table table-striped">
                                 <thead>
@@ -240,9 +323,9 @@
                                     </tr>
                                 </thead>
 
-                                <tbody>
+                                <tbody> *@
 
-                                    <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
+@*                                     <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
                                         <td> <a href="#">Enginner Software</a></td>
                                         <td>Google</td>
                                         <td> 2016/09/27</td>
@@ -297,7 +380,7 @@
                         </div>
                     </td>
                 </tr>
-
+ *@
 
 
                     </tbody>
@@ -483,6 +566,8 @@
  
 
 @code {
+
+    // ama bxara naw browser http://localhost:5047/FollowUp. 
     public string TextValue { get; set; }
     public class Pizza
     {
@@ -509,7 +594,7 @@
 
     private bool showModel = false;
     private string modelStyle => showModel ? "display:block" : "display:none";
-    PagedResult<IssueRead> pagedResult = new();
+    PagedResult<IssueRead> pagedResult = new(); // list y issue kan. 
     List<WorkPlaceRead> workPlaces = new();
     List<CfgIssueTypeRead> cfgIssueTypes = new();
     public string workPlaceId { get; set; } = "";
