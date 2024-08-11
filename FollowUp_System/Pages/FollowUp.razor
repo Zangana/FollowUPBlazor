@@ -89,15 +89,17 @@
                                     <td>Nothing Added</td>
                                 }
                                 <td></td>
+                                @*this button here allows yo to add notes*@
                                 <td><button type="button" class="btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-plus h3"></i></button></td>
 
                          </tr>
 
-                     
+                                   @*under here is the collpsible row that has a table inside it*@
                                     <tr>
                                 <td colspan="12" class="hiddenRow">
                                     <div class="accordian-body collapse" id="demo10">
-                                        <table class="table table-striped">
+                                       @*this is the table*@ 
+                                       <table class="table table-striped">
                                             <thead>
                                                 <tr class="info">
                                                     <th>Job</th>
@@ -107,6 +109,7 @@
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
+                                            @*this is the body of the table where the details are inserted*@
 
                                             <tbody>
                                                 <!-- amam bo bxara naw-->
@@ -188,204 +191,13 @@
                             </tr>
 
                         }
-@*                     <tr data-toggle="collapse" data-target="#demo2" class="accordion-toggle">
-                    <td>
-                        <MudIconButton Icon="@Icons.Material.Filled.ArrowDropDown" Color="Color.Inherit" Edge="Edge.Start" />
-                    </td>
-                    <td>Carlos</td>
-                    <td>Mathias</td>
-                    <td>Leme</td>
-                    <td>SP</td>
-                    <td>SP</td>
-                    <td><button type="button" class="btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-plus h3"></i></button></td>
 
-                </tr>
- *@
-
-     @*                    <tr>
-                            <td colspan="12" class="hiddenRow">
-                                <div class="accordian-body collapse" id="demo2">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr class="info">
-                                                <th>Job</th>
-                                                <th>Company</th>
-                                                <th>Date On</th>
-                                                <th>Date off</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
-                                            <!-- amam bo bxara naw-->
-                                            <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                                <td> <a href="#">Enginner Software</a></td>
-                                                <td>Google</td>
-                                                <td> 2016/09/27</td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-warning btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Progress
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
-                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
-                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
-
-
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                                <td>
-                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
-                                                </td>
-                                            </tr>
-
-                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                            <td> <a href="#">Enginner Software</a></td>
-                                            <td>Google</td>
-                                            <td> 2016/09/27</td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-warning btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Progress
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
-                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
-                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
-
-
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                            <td> <a href="#">Enginner Software</a></td>
-                                            <td>Google</td>
-                                            <td> 2016/09/27</td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Completes
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
-                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
-                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
-
-
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
-                                            </td>
-                                        </tr>
-                                     
-
-
-                                        </tbody>
-                                    </table>
-
-                                </div>
-                            </td>
-                        </tr> *@
-
-
-@*                 <tr data-toggle="collapse" data-target="#demo3" class="accordion-toggle">
-                    <td>
-                        <MudIconButton Icon="@Icons.Material.Filled.ArrowDropDown" Color="Color.Inherit" Edge="Edge.Start" />
-                    </td>
-                    <td>Carlos</td>
-                    <td>Mathias</td>
-                    <td>Leme</td>
-                    <td>SP</td>
-                     <td>SP</td>
-                     <td><button type="button" class="btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-plus h3"></i></button></td>
-                </tr> *@
-
-
-             @*    <tr> *@
-           @*          <td colspan="12" class="hiddenRow">
-                        <div class="accordian-body collapse" id="demo3">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr class="info">
-                                        <th>Job</th>
-                                        <th>Company</th>
-                                        <th>Date On</th>
-                                        <th>Date off</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-
-                                <tbody> *@
-
-@*                                     <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                        <td> <a href="#">Enginner Software</a></td>
-                                        <td>Google</td>
-                                        <td> 2016/09/27</td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Completes
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
-                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
-                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
-                                                        
-                                                     
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        <td>
-                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
-                                        </td>
-
-                                    </tr>
-
-                                        <tr data-toggle="collapse" class="accordion-toggle" data-target="#demo10">
-                                            <td> <a href="#">Enginner Software</a></td>
-                                            <td>Google</td>
-                                            <td> 2016/09/27</td>
-                                            <td>
-                                                <div class="btn-group">
-                                                    <button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                                        Cancel
-                                                    </button>
-                                                    <ul class="dropdown-menu">
-                                                        <li><a class="dropdown-item" href="#">Completes</a></li>
-                                                        <li><a class="dropdown-item" href="#">Progress</a></li>
-                                                        <li><a class="dropdown-item" href="#">Cancel</a></li>
-
-
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4"><i class="bi bi-eye"></i></button>
-                                            </td>
-
-                                        </tr>
-
-
-                                </tbody>
-                            </table>
-
-                        </div>
-                    </td>
-                </tr>
- *@
 
 
                     </tbody>
                 </table>
-
+        
+         @*this section is where you can navigate the tabs of the table although i think we should remove this part it would be more convenient to just have everything in one page*@
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
@@ -417,6 +229,7 @@
             </div>
             <div class="modal-body">
                 <form>
+                    @*this is where you choose your workplace*@
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Work Place</label>
                         <select class="form-select" id="" required @bind="workPlaceId">
@@ -427,7 +240,7 @@
                             })
                         </select>
                     </div>
-
+                      @*this is where you choose issue type*@
                     <div class="mb-3">
                         <label for="recipient-name" class="col-form-label">Issue Type</label>
                         <select class="form-select" id="" required @bind="issueTypeIdSelect">
@@ -502,6 +315,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
+                        @*here is the pop up used to add notes*@
                         <table class="table table-striped">
 
                             <thead>
@@ -556,6 +370,7 @@
                     </div>
                 </div>
             </div>
+            @*this button here is used to save the added note*@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save</button>
